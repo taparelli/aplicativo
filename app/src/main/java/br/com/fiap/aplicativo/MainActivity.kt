@@ -31,16 +31,14 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val navController = rememberNavController()
                     NavHost(navController = navController, startDestination = "Menu"){
-
-                        composable(route = "Menu"){
-                            MenuScreen(navController)
-                        }
-
                         composable(route = "Login"){
                             LoginScreen(navController)
                         }
                         composable(route = "sos"){
                             SosScreen(navController)
+                        }
+                        composable(route = "Menu"){
+                            MenuScreen(navController)
                         }
 
                         composable(route="ocorrencia/{tipoOcorrencia}"){
@@ -58,8 +56,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+class MenuScream {
 
-
-
-
-
+}

@@ -80,7 +80,7 @@ fun SosScreen(navController: NavController) {
                     text = "Registrar ocorrência",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
-                    )
+                )
             }
             // --- opçoes
             Spacer(modifier = Modifier.height(50.dp))
@@ -94,7 +94,7 @@ fun SosScreen(navController: NavController) {
 
 
                 Button(
-                    onClick = {navController.navigate("ocorrencia/violencia")},
+                    onClick = { navController.navigate("ocorrencia/violencia") },
                     modifier = Modifier
                         .height(150.dp)
                         .width(150.dp)
@@ -107,10 +107,10 @@ fun SosScreen(navController: NavController) {
                         defaultElevation = 10.dp
                     )
                 ) {
-                    Column (
+                    Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxWidth()
-                    ){
+                    ) {
                         Image(
                             painter = painterResource(id = R.drawable.violencia),
                             contentDescription = "Violencia familiar",
@@ -128,7 +128,7 @@ fun SosScreen(navController: NavController) {
                 }
 
                 Button(
-                    onClick = {navController.navigate("ocorrencia/desaparecimento")},
+                    onClick = { navController.navigate("ocorrencia/desaparecimento") },
                     modifier = Modifier
                         .height(150.dp)
                         .width(150.dp)
@@ -139,10 +139,10 @@ fun SosScreen(navController: NavController) {
                     shape = RoundedCornerShape(16.dp),
                     elevation = ButtonDefaults.buttonElevation(defaultElevation = 10.dp)
                 ) {
-                    Column (
+                    Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxWidth()
-                    ){
+                    ) {
                         Image(
                             painter = painterResource(id = R.drawable.desaparecer),
                             contentDescription = "Perturbação do sossego",
@@ -155,7 +155,7 @@ fun SosScreen(navController: NavController) {
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             color = Color.Black,
-                            )
+                        )
                     }
                 }
 
@@ -170,7 +170,7 @@ fun SosScreen(navController: NavController) {
             ) {
 
                 Button(
-                    onClick = {navController.navigate("ocorrencia/roubo")},
+                    onClick = { navController.navigate("ocorrencia/roubo") },
                     modifier = Modifier
                         .height(150.dp)
                         .width(150.dp)
@@ -183,10 +183,10 @@ fun SosScreen(navController: NavController) {
                         defaultElevation = 10.dp
                     )
                 ) {
-                    Column (
+                    Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxWidth()
-                    ){
+                    ) {
                         Image(
                             painter = painterResource(id = R.drawable.bandido),
                             contentDescription = "Bandico",
@@ -199,15 +199,12 @@ fun SosScreen(navController: NavController) {
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             color = Color.Black,
-                            )
+                        )
                     }
                 }
 
-
-
-
                 Button(
-                    onClick = {navController.navigate("ocorrencia/escolar")},
+                    onClick = { navController.navigate("ocorrencia/escolar") },
                     modifier = Modifier
                         .height(150.dp)
                         .width(150.dp)
@@ -220,10 +217,10 @@ fun SosScreen(navController: NavController) {
                         defaultElevation = 10.dp
                     )
                 ) {
-                    Column (
+                    Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxWidth()
-                    ){
+                    ) {
                         Image(
                             painter = painterResource(id = R.drawable.escola),
                             contentDescription = "Segurança Escolar",
@@ -236,7 +233,7 @@ fun SosScreen(navController: NavController) {
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             color = Color.Black,
-                            )
+                        )
                     }
                 }
             }
@@ -249,13 +246,15 @@ fun SosScreen(navController: NavController) {
             ) {
 
                 Button(
-                    onClick = { navController.navigate("Menu")},
+                    onClick = { navController.navigate("Login") },
+
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color(0xC9F80505),
-                        contentColor =  Color(0xF3FDFFFF)),
+                        contentColor = Color(0xF3FDFFFF)
+                    ),
                     shape = RectangleShape
                 ) {
                     Text(text = "Voltar")

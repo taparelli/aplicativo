@@ -144,7 +144,11 @@ fun LoginScreen(navController: NavController) {
         Column() {
             Button(
                 onClick = {
+
                     navController.navigate("sos")
+
+                    navController.navigate("Menu")
+
                 },
                 modifier = Modifier
                     .offset(220.dp, 10.dp),

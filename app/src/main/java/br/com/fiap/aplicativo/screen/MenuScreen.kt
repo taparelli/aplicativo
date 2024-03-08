@@ -100,3 +100,13 @@ fun MenuScreen(navController: NavController) {
         }
     }
 }
+
+
+//@Preview(showBackground = true, showSystemUi = true)
+//@Composable
+//fun MenuPreview() {
+//    AplicativoTheme {
+//        MenuScream()
+//    }
+//}}
+
